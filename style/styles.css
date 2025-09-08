@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #00030C;
+    --secondary-color: #FFFFFF; 
+    --terciary-color: #C0C0C0;
+    --highlight-color: #167BF7;
+
+    --primary-font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mainContent{
+    background-image: url("../assets/Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.mainContent__infoDiv{
+    padding: 25% 10%;
+}
+
+.mainContent__infoDiv__title{
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin: 1em;
+}
+
+.mainContent__infoDiv__image{
+    margin: 1em 0 2em 0;
+}
+
+.mainContent__infoDiv__button{
+    text-decoration: none;
+    background-color: var(--highlight-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.secondary_button{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+.mainContent__infoDiv__additionalInfo{
+    color: var(--terciary-color);
+    font-size: 0.75rem;
+    margin: 1rem;
+}
