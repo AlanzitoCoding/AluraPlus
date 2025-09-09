@@ -11,6 +11,9 @@
     --tertiary-color: #C0C0C0;
     --highlight-color: #167BF7;
 
+    --secondary-hover-color: #afafaf;
+    --highlight-hover-color: #519dfa;
+
     --primary-font-family: 'Inter', sans-serif;
 }
 
@@ -60,9 +63,17 @@ body{
     margin-bottom: 1em;
 }
 
+.mainContent__infoDiv__button:hover{
+    background-color: var(--highlight-hover-color);
+}
+
 .secondary_button{
     background-color: transparent;
     border: 1px solid var(--secondary-color);
+}
+
+.secondary_button:hover{
+    background-color: var(--secondary-hover-color);
 }
 
 .mainContent__infoDiv__additionalInfo{
@@ -111,7 +122,7 @@ body{
 }
 
 .devicesContent{
-    height: 100vh;
+    height: 50vh;
     text-align: center;
 }
 
@@ -130,4 +141,35 @@ body{
 .devicesDiv__subtitle{
     font-size: 2rem;
     font-weight: 700;
+}
+
+.footer{
+    margin: 6em 8em;
+}
+
+.footer__termsList{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__termsItem{
+    list-style-type: none;
+    padding: 2rem 1rem;
+}
+
+.footer__termsItem a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.footer__termsItem a:hover{
+    color: var(--secondary-hover-color);
+}
+
+.footer__text{
+    font-family: var(--primary-font-family);
+    color: var(--tertiary-color);
+    text-align: center;
+    font-size: 0.875rem;
+    margin: 1rem;
 }
